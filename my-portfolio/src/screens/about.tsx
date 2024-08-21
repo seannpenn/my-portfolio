@@ -1,4 +1,5 @@
 import photo from "../assets/img/photo.png";
+import { SkillBox } from "../components/skillBox";
 
 export const About = () => {
   return (
@@ -14,7 +15,7 @@ export const About = () => {
         >
           <img
             // className="rounded-full w-8/12"
-            className="w-70 rounded-full md:w-9/12"
+            className="w-9/12 rounded-full"
             src={photo}
           />
         </div>
@@ -52,19 +53,68 @@ export const About = () => {
         className="max-h-full h-[calc(100vh-76px)] p-6"
       >
         <div className="text-start bg-white">
-          <h1 className="text-4xl">Section 2</h1>
-          <div className="grid justify-evenly grid-cols-1 gap-4 md:grid-cols-6">
-            <div className="size-64 shadow-md grid justify-items-center">
-              <img
-                className="w-52"
-                src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo-500x313.png"
-              />
-            </div>
-            <div className="size-64 shadow-md">test</div>
-            <div className="size-64 shadow-md">test</div>
-            <div className="size-64 shadow-md">test</div>
-            <div className="size-64 shadow-md">test</div>
-            <div className="size-64 shadow-md">test</div>
+          <h1 className="text-4xl">My Skills</h1>
+          <div className="grid justify-evenly grid-cols-2 gap-4 md:grid-cols-9">
+            <SkillBox
+              imageLink={
+                "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo-500x313.png"
+              }
+              title="Java"
+            />
+            <SkillBox
+              imageLink={
+                "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo-500x313.png"
+              }
+              title="PHP"
+            />
+            <SkillBox
+              imageLink={
+                "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo-500x313.png"
+              }
+              title="Flutter"
+            />
+            <SkillBox
+              imageLink={
+                "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo-500x313.png"
+              }
+              title="GIT Source Control"
+            />
+            <SkillBox
+              imageLink={
+                "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo-500x313.png"
+              }
+              title="JavaScript"
+            />
+            <SkillBox
+              imageLink={
+                "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo-500x313.png"
+              }
+              title="JQuery"
+            />
+            <SkillBox
+              imageLink={
+                "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo-500x313.png"
+              }
+              title="HTML"
+            />
+            <SkillBox
+              imageLink={
+                "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo-500x313.png"
+              }
+              title="CSS"
+            />
+            <SkillBox
+              imageLink={
+                "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo-500x313.png"
+              }
+              title="Java"
+            />
+            <SkillBox
+              imageLink={
+                "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo-500x313.png"
+              }
+              title="Java"
+            />
           </div>
         </div>
       </section>

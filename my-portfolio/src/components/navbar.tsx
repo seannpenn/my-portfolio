@@ -1,4 +1,8 @@
-const Anchor = (name: String) => {
+interface AnchorProps {
+  name: string;
+}
+
+const Anchor = ({ name }: AnchorProps) => {
   return (
     <a
       href="#"
